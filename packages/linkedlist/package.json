@@ -1,0 +1,33 @@
+{
+  "name": "linked-list",
+  "version": "0.0.1",
+  "description": "a linear data structure in which the elements are linked using pointers",
+  "keywords": [
+    "linear data-structure",
+    "data-structure",
+    "linked-list"
+  ],
+  "author": "priyankag048 <priyankaguha.2012@gmail.com>",
+  "homepage": "https://github.com/priyankag048/datasets#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankag048/datasets.git",
+    "directory": "packages/linkedlist"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest --coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/priyankag048/datasets/issues"
+  }
+}
