@@ -1,0 +1,33 @@
+{
+  "name": "stack",
+  "version": "0.0.1",
+  "description": "a linear data structure which follows a particular order LIFO",
+  "keywords": [
+    "stack",
+    "array",
+    "data-structure"
+  ],
+  "author": "priyankag048",
+  "homepage": "https://github.com/priyankag048/datasets#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankag048/datasets.git",
+    "directory": "packages/stack"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest --coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/priyankag048/datasets/issues"
+  }
+}
