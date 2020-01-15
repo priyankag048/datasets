@@ -24,7 +24,7 @@
     "directory": "packages/stack"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest --coverage"
   },
   "bugs": {

@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/Queue.min.js');
+module.exports = require('./dist/Queue.js');

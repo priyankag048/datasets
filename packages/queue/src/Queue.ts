@@ -1,6 +1,6 @@
 'use strict';
 
-export default class Queue<T>{
+class Queue<T>{
   maxLength: number;
   arr: Array<T>;
   
@@ -66,3 +66,5 @@ export default class Queue<T>{
 		this.arr = [];
 	}
 }
+
+export { Queue };

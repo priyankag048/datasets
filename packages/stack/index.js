@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/Stack.min.js');
+module.exports = require('./dist/Stack.js');

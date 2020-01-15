@@ -2,7 +2,7 @@
 
 import NodeType from './node.interface';
 import Node from './Node';
-export default class LinkedList<T>{
+class LinkedList<T>{
   head: NodeType<T>;
   size: number;
 
@@ -154,3 +154,5 @@ export default class LinkedList<T>{
   }
 
 }
+
+export { LinkedList };

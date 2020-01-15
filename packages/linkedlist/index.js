@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/LinkedList.min.js');
+module.exports = require('./dist/LinkedList.js');

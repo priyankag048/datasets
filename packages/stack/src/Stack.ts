@@ -1,6 +1,6 @@
 'use strict';
 
-export default class Stack<T> {
+class Stack<T> {
 	maxLength: number;
 	arr: Array<T>;
 
@@ -66,3 +66,5 @@ export default class Stack<T> {
 		this.arr = [];
 	}
 }
+
+export { Stack }
