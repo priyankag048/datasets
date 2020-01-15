@@ -1,5 +1,5 @@
 {
-  "name": "stack",
+  "name": "@datasets/stack",
   "version": "0.0.1",
   "description": "a linear data structure which follows a particular order LIFO",
   "keywords": [

@@ -1,15 +1,18 @@
 'use strict';
 
+import { OverflowError, UnderflowError } from '@datasets/error';
 class Queue<T>{
   maxLength: number;
   arr: Array<T>;
+  shouldThrow: boolean;
   
   /**
    * @param { number } max 
   */
-  constructor(max: number){
+  constructor(max: number, shouldThrow: boolean=false){
     this.maxLength = max; // define a max length, maximum size of queue
     this.arr = [];
+    this.shouldThrow = shouldThrow;
   }
 
   /**
@@ -33,7 +36,11 @@ class Queue<T>{
   enqueue(value: T): boolean {
     const arrSize = this.getSize();
 		if (arrSize >= this.maxLength) {
-			return false;
+			if(this.shouldThrow){
+				throw new OverflowError('Queue', this.maxLength);
+			} else {
+				return false;
+			}
 		}
 		this.arr.push(value);
 		return true;
@@ -44,7 +51,11 @@ class Queue<T>{
   */
   dequeue(): T | Object {
     if (this.isEmpty()) {
-			return null;
+			if(this.shouldThrow){
+				throw new UnderflowError('Queue');
+			} else {
+				return null;
+			}
 		}
 		return this.arr.shift();
   }
@@ -54,7 +65,11 @@ class Queue<T>{
   */
   peek(): T | Object {
 		if (this.isEmpty()) {
-			return null;
+      if(this.shouldThrow){
+				throw new UnderflowError('Queue');
+			} else {
+				return null;
+			}
 		}
 		return this.arr[0];
   }

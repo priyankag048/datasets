@@ -15,8 +15,9 @@
     "typescript": "3.7.4"
   },
   "dependencies": {
-    "linked-list": "file:packages/linkedlist",
-    "queue": "file:packages/queue",
-    "stack": "file:packages/stack"
+    "@datasets/error": "file:packages/error",
+    "@datasets/linked-list": "file:packages/linkedlist",
+    "@datasets/queue": "file:packages/queue",
+    "@datasets/stack": "file:packages/stack"
   }
 }

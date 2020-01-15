@@ -1,17 +1,11 @@
 {
-  "name": "@datasets/queue",
+  "name": "@datasets/error",
   "version": "0.0.1",
-  "description": "a linear data structure which follows a particular order FIFO",
-  "keywords": [
-    "queue",
-    "data-structure",
-    "FIFO",
-    "first-in-first-out"
-  ],
+  "description": "error types",
   "author": "priyankag048 <priyankaguha.2012@gmail.com>",
   "homepage": "https://github.com/priyankag048/datasets#readme",
   "license": "ISC",
-  "main": "index.js",
+  "main": "lib/error.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -21,12 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/priyankag048/datasets.git",
-    "directory": "packages/queue"
+    "url": "git+https://github.com/priyankag048/datasets.git"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "jest --coverage"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/priyankag048/datasets/issues"

@@ -1,15 +1,17 @@
 'use strict';
-
+import { OverflowError, UnderflowError } from '@datasets/error';
 class Stack<T> {
 	maxLength: number;
 	arr: Array<T>;
+	shouldThrow: boolean;
 
 	/**
    * @param { number } max 
   */
-	constructor(max: number) {
+	constructor(max: number, shouldThrow: boolean=false) {
 		this.maxLength = max; // define a max length, maximum size of Stack
 		this.arr = [];
+		this.shouldThrow = shouldThrow;
 	}
 
   /**
@@ -33,7 +35,11 @@ class Stack<T> {
 	push(value: T): boolean {
 		const arrSize = this.getSize();
 		if (arrSize >= this.maxLength) {
-			return false;
+			if(this.shouldThrow){
+				throw new OverflowError('Stack', this.maxLength);
+			} else {
+				return false;
+			}
 		}
 		this.arr.push(value);
 		return true;
@@ -44,7 +50,11 @@ class Stack<T> {
   */
 	pop(): T | Object {
 		if (this.isEmpty()) {
-			return null;
+			if(this.shouldThrow){
+				throw new UnderflowError('Stack');
+			} else {
+				return null;
+			}
 		}
 		return this.arr.pop();
 	}
@@ -54,7 +64,11 @@ class Stack<T> {
   */
 	peek(): T | Object {
 		if (this.isEmpty()) {
-			return null;
+			if(this.shouldThrow){
+				throw new UnderflowError('Stack');
+			} else {
+				return null;
+			}
 		}
 		return this.arr[this.arr.length - 1];
 	}

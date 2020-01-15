@@ -1,5 +1,5 @@
 {
-  "name": "linked-list",
+  "name": "@datasets/linked-list",
   "version": "0.0.1",
   "description": "a linear data structure in which the elements are linked using pointers",
   "keywords": [
