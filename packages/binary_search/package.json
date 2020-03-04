@@ -1,0 +1,27 @@
+{
+  "name": "@datasets/binary_search",
+  "version": "0.0.1",
+  "description": "search a value from a sorted array",
+  "author": "priyankag048 <priyankaguha.2012@gmail.com>",
+  "homepage": "https://github.com/priyankag048/datasets#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankag048/datasets.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/priyankag048/datasets/issues"
+  }
+}
