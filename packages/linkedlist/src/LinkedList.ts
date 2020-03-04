@@ -148,11 +148,23 @@ class LinkedList<T>{
     }
   }
 
-  emptyList() {
+  emptyList(): void {
     this.head = null;
     this.size = 0;
   }
 
+  reverseLinkedList():void {
+    let prev = null;
+    let next = null;
+    let curr = this.head;
+    while(curr !== null) {
+      next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    this.head = prev;
+  }
 }
 
 export { LinkedList };

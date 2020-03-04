@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    "target": "ES5",
     "allowJs": true,
-    "target": "ES5"
+    "module": "CommonJS",
+    "lib": [
+      "ES2019"
+    ],
   },
   "exclude": [
     "node_modules"

@@ -1,4 +1,4 @@
-import Queue from '../src/Queue';
+import {Queue} from '../src/Queue';
 
 describe('Queue', () => {
   const queue = new Queue(2);

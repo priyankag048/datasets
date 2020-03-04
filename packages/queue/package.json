@@ -13,11 +13,11 @@
   "license": "ISC",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "repository": {
     "type": "git",

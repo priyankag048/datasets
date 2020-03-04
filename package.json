@@ -5,13 +5,13 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@typescript-eslint/parser": "^2.15.0",
-    "eslint": "^6.8.0",
-    "jest": "^24.9.0",
+    "@types/jest": "24.0.25",
+    "@typescript-eslint/parser": "2.15.0",
+    "eslint": "6.8.0",
+    "jest": "24.9.0",
     "lerna": "3.15.0",
-    "ts-jest": "^24.3.0",
-    "ts-loader": "^6.2.1",
+    "ts-jest": "24.3.0",
+    "ts-loader": "6.2.1",
     "typescript": "3.7.4"
   },
   "dependencies": {

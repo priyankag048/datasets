@@ -1,4 +1,4 @@
-import Stack from '../src/Stack';
+import {Stack} from '../src/Stack';
 
 describe('Stack', () => {
   const stack = new Stack(2);
