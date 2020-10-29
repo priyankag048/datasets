@@ -1,0 +1,7 @@
+site_name: Data Structures and Algorithms
+nav:
+  - Overview: index.md
+  - Setup: setup.md
+  - Test application: test.md
+theme:
+  name: material

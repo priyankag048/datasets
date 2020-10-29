@@ -15,6 +15,7 @@
     "typescript": "3.7.4"
   },
   "dependencies": {
+    "@datasets/binary_search": "file:packages/binary_search",
     "@datasets/error": "file:packages/error",
     "@datasets/linked-list": "file:packages/linkedlist",
     "@datasets/queue": "file:packages/queue",
