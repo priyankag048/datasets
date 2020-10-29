@@ -1,1 +1,3 @@
 remote_theme: squidfunk/mkdocs-material
+
+theme: jekyll-theme-modernist
